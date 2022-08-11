@@ -156,7 +156,6 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 abbr[title] {
@@ -3177,8 +3176,10 @@ textarea.form-control-lg {
   opacity: 0;
 }
 
-.collapse:not(.show) {
-  display: none;
+@media(max-width: 1114px){
+  .collapse:not(.show) {
+    display: none;
+  }
 }
 
 .collapsing {
@@ -3624,12 +3625,6 @@ textarea.form-control-lg {
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
 }
 
 .nav-link {
