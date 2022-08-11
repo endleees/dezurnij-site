@@ -18,54 +18,55 @@
   <body class="page__body">
 
     <header class="main-header">
-
+      <!-- размер логотипа под размер дежурного
+      сделать выравнивание логотипов и заголовках по ширине
+      цвет нижней строки на про боно -->
       <div class="main-header__wrapper-mobile">
         <div class="main-header__main-logo">
           <img src="img/dezurnyj-logo.svg" width="50" height="50" class="main-header__main-image">
         </div>
-        <span class="main-header__title">
+        <div class="main-header__title">
           Экспертно-аналитический альянс
 
           <span class="main-header__description">
             <br>Дежурный по бизнесу
           </span>
+        </div>
+        <input type="button" class="main-header__pro-bono" value="Pro bono">
+
         </span>
-
-
-        </span>
-
-
-
         <!-- <a class="btn btn-primary main-header__button-menu" data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
           <img class="img" src="img/menu-icon.svg" width="40" height="40">
         </a> -->
+
         <div class="burger btn btn-primary main-header__button-menu" data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse" >
           <span></span>
         </div>
       </div>
-      <div class="collapse" id="collapse" aria-controls="collapse">
-        <nav class="main-nav" >
+      <div class="collapse collapse-show" id="collapse" aria-controls="collapse">
+        <nav class="main-nav">
+
           <ul class="nav nav--mobile">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">О нас</a>
+              <a class="nav-link nav-link--laptop active" aria-current="page" href="#">О нас</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Услуги</a>
+              <a class="nav-link nav-link--laptop" href="#">Услуги</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Советы для бизнеса</a>
+              <a class="nav-link nav-link--laptop" href="#">Советы для бизнеса</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">СМИ о нас</a>
+              <a class="nav-link nav-link--laptop">СМИ о нас</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Контакты</a>
+              <a class="nav-link nav-link--laptop">Контакты</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Эксперты</a>
+              <a class="nav-link nav-link--laptop">Эксперты</a>
             </li>
             <li class="nav-item nav-item--pro-bono">
-              <a class="nav-link nav-link--pro-bono">Pro bono</a>
+              <a class="nav-link nav-link--laptop nav-link--pro-bono">Pro bono</a>
             </li>
           </ul>
         </nav>
@@ -76,11 +77,239 @@
         <div class="main-content-wrapper__slogan">
           <ul class="main-content-wrapper__slogan-list">
           </ul>
-          <img class="main-content-wrapper__image" src="img/rock.jfif">
+          <div class="main-content-wrapper__wrapper-image">
+            <img class="main-content-wrapper__image" src="img/house.jpg">
+          </div>
+
         </div>
       </div>
+
+      <div id="carouselExampleControls" class="main-content-wrapper__carousel carousel slide carousel-Controls" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="post-item">
+              <div class="item-content">
+                <img class="item-icon group" src="img/AD.png"width="70" height="50">
+                <div class="item-body">
+                  <h3 class="post-title">
+                    Перечень оснований введения режима особых условий в учреждениях УИС предлагается расширить</h3>
+                  <p class="post-description">В Госдуму внесен проект поправок в УИК, предусматривающий приостановку реализации прав осужденных на свидания, получение передач, посылок, прогулки, а также выезды за пределы исправительных учреждений</p>
+                </div>
+                <div class="item-footer">
+                  <a target="_blank" href="https://www.advgazeta.ru/novosti/perechen-osnovaniy-vvedeniya-rezhima-osobykh-usloviy-v-uchrezhdeniyakh-uis-predlagaetsya-rasshirit/?utm_source=yxnews&utm_medium=desktop&utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D" class="link"><span>Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="post-item">
+              <div class="item-content">
+                <img class="item-icon group" src="img/ria-logo.png" width="100" height="30">
+                <div class="item-body">
+                  <h3 class="post-title">Налоговые органы России с 1 августа могут делиться налоговой тайной</h3>
+                  <p class="post-description">Налоговые органы России с 1 августа получили право передавать третьим лицам сведения о налогоплательщике, составляющие налоговую тайну, предварительно получив на это его согласие.</p>
+                </div>
+                <div class="item-footer">
+                  <a target="_blank" href="https://www.kommersant.ru/doc/5182144?utm_source=yxnews&utm_medium=desktop&utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D" class="link"><span>Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="post-item">
+              <div class="item-content">
+                <img class="item-icon group" src="img/Deloros-logo.png"width="110"height="30">
+                <div class="item-body">
+                  <h3 class="post-title">
+                    Екатерина Авдеева приняла участие в совещании по развитию сети исправительных центров</h3>
+                  <p class="post-description">Член генерального совета «Деловой России», руководитель Экспертного центра по уголовно-правовой политике и исполнению судебных актов Екатерина Авдеева приняла участие в совещании по развитию сети исправительных центров под председательством министра юстиции РФ Всеволода Вуколова. </p>
+                </div>
+                <div class="item-footer">
+                  <a target="_blank" href="https://iz.ru/1277044/2022-01-14/v-delovoi-rossii-nazvali-sposoby-borby-s-vyvodom-deneg-za-rubezh?utm_source=yxnews&utm_medium=desktop&utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D" class="link"><span>Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="post-item">
+              <div class="item-content">
+                <img class="item-icon group" src="img/first-chanel.svg"width="50"height="50">
+                <div class="item-body">
+                  <h3 class="post-title">
+                    Владимир Путин провел большую встречу с участниками общественной организации «Деловая Россия»</h3>
+                  <p class="post-description">Владимир Путин в режиме видеоконференции пообщался с участниками «Деловой России». Это общественное объединение, в которое входят предприниматели со всей страны, в том числе представители крупнейших российских компаний. И, как обычно на таких встречах, шла речь о том, что волнует миллионы людей, в частности, планирует ли правительство ужесточать ограничения, связанные с коронавирусом. </p>
+                </div>
+                <div class="item-footer">
+                  <a target="_blank" href="https://iz.ru/1277044/2022-01-14/v-delovoi-rossii-nazvali-sposoby-borby-s-vyvodom-deneg-za-rubezh?utm_source=yxnews&utm_medium=desktop&utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D" class="link"><span>Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button> -->
+      </div>
+      <div class="post-wrap">
+        <div class="post-item">
+          <div class="item-content">
+            <img class="item-icon group" src="img/AD.png"width="60" height="50">
+            <div class="item-body">
+              <h3 class="post-title">
+                Перечень оснований введения режима особых условий в учреждениях УИС предлагается расширить</h3>
+              <p class="post-description">В Госдуму внесен проект поправок в УИК, предусматривающий приостановку реализации прав осужденных на свидания, получение передач, посылок, прогулки, а также выезды за пределы исправительных учреждений</p>
+            </div>
+            <div class="item-footer">
+              <a target="_blank" href="https://www.advgazeta.ru/novosti/perechen-osnovaniy-vvedeniya-rezhima-osobykh-usloviy-v-uchrezhdeniyakh-uis-predlagaetsya-rasshirit/?utm_source=yxnews&utm_medium=desktop&utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D" class="link"><span>Подробнее</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="post-item">
+          <div class="item-content">
+            <img class="item-icon group" src="img/ria-logo.png" width="150" height="50">
+            <div class="item-body">
+              <h3 class="post-title">Налоговые органы России с 1 августа могут делиться налоговой тайной</h3>
+              <p class="post-description">Налоговые органы России с 1 августа получили право передавать третьим лицам сведения о налогоплательщике, составляющие налоговую тайну, предварительно получив на это его согласие.</p>
+            </div>
+            <div class="item-footer">
+              <a target="_blank" href="https://www.kommersant.ru/doc/5182144?utm_source=yxnews&utm_medium=desktop&utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D" class="link"><span>Подробнее</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-item">
+          <div class="item-content">
+            <img class="item-icon group" src="img/Deloros-logo.png"width="180"height="50">
+            <div class="item-body">
+              <h3 class="post-title">
+                Екатерина Авдеева приняла участие в совещании по развитию сети исправительных центров</h3>
+              <p class="post-description">Член генерального совета «Деловой России», руководитель Экспертного центра по уголовно-правовой политике и исполнению судебных актов Екатерина Авдеева приняла участие в совещании по развитию сети исправительных центров под председательством министра юстиции РФ Всеволода Вуколова. </p>
+            </div>
+            <div class="item-footer">
+              <a target="_blank" href="https://iz.ru/1277044/2022-01-14/v-delovoi-rossii-nazvali-sposoby-borby-s-vyvodom-deneg-za-rubezh?utm_source=yxnews&utm_medium=desktop&utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D" class="link"><span>Подробнее</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="post-item">
+          <div class="item-content">
+            <img class="item-icon group" src="img/first-chanel.svg"width="50"height="50">
+            <div class="item-body">
+              <h3 class="post-title">
+                Владимир Путин провел большую встречу с участниками общественной организации «Деловая Россия»</h3>
+              <p class="post-description">Владимир Путин в режиме видеоконференции пообщался с участниками «Деловой России». Это общественное объединение, в которое входят предприниматели со всей страны, в том числе представители крупнейших российских компаний. И, как обычно на таких встречах, шла речь о том, что волнует миллионы людей, в частности, планирует ли правительство ужесточать ограничения, связанные с коронавирусом. </p>
+            </div>
+            <div class="item-footer">
+              <a target="_blank" href="https://www.1tv.ru/news/2022-02-03/420566-vladimir_putin_provel_bolshuyu_vstrechu_s_uchastnikami_obschestvennoy_organizatsii_delovaya_rossiya?utm_source=yxnews&utm_medium=desktop&utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D" class="link"><span>Подробнее</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="post-item">
+          <div class="item-content">
+            <img class="item-icon group" src="img/AD.png"width="70" height="50">
+            <div class="item-body">
+              <h3 class="post-title">
+                Условия содержания под стражей: тенденции к улучшению</h3>
+              <p class="post-description">О новых вступивших в силу правилах внутреннего распорядка СИЗО и пенитенциарных учреждений </p>
+            </div>
+            <div class="item-footer">
+              <a target="_blank" href="https://www.advgazeta.ru/mneniya/usloviya-soderzhaniya-pod-strazhey-tendentsii-k-uluchsheniyu/" class="link"><span>Подробнее</span></a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+    <footer class="main-footer">
+
+      <div class="main-footer__agreement">
+        <img class="main-footer__agreement-logo" src="img/karikatyra.png" width="80" height="180">
+        <div class="main-footer__address">
+
+          <ul class="main-footer__address-list">
+            <p class="main-footer__address-phone-description">
+              Контактная информация
+              </p>
+            <li class="main-footer__address-item">
+
+              <p class="main-footer__address-email">
+                Email: help@dezhurnyj-po-biznesu.ru
+              </p>
+
+
+
+
+
+            </li>
+            <li class="main-footer__address-item">
+
+                <!-- <p class="main-footer__address-phone-description">
+                  Горячая линия поддержки:
+                  </p> -->
+                  <p class="main-footer__address-description">
+                    Контактный телефон: +7 (495) 799-77-25
+                    </p>
+                    <p class="main-footer__address-description main-footer__address-description--mod">
+                      Адрес: Россия, Москва, улица Большая Якиманка 33/13 строение 3, 119180
+                      </p>
+
+            </li>
+            <li class="main-footer__address-item">
+
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- <p class="main-footer__agreement-description">
+          Содержание данного информационного ресурса (сайт www.dezhurnyj-po-biznesu.ru), включая любую информацию и результаты интеллектуальной деятельности, защищены законодательством Российской Федерации и международными соглашениями. Любое использование, копирование, воспроизведение или распространение любой размещенной информации, материалов и (или) их частей не допускается без предварительного получения согласия правообладателя и влечет применение мер ответственности.
+          Комментарии, презентации и статьи юристов, размещенные на сайте www.dezhurnyj-po-biznesu.ru, или доступ к которым предоставлен через сайт www.dezhurnyj-po-biznesu.ru, отражают их личное мнение и собственные выводы, которые могут не совпадать с позицией Экспертно-аналитического альянса «Дежурный по бизнесу».
+          Сведения и материалы, размещенные на сайте www.dezhurnyj-po-biznesu.ru, подготовлены исключительно в информационных целях и не являются юридической консультацией или заключением. Экспертно-аналитический альянс «Дежурный по бизнесу», его руководство, адвокаты и сотрудники не могут гарантировать применимость такой информации для ваших целей и не несут ответственности за ваши решения и связанные с ними возможные прямые или косвенные потери и/или ущерб, возникшие в результате использования информации или какой-либо ее части, содержащейся на сайте www.dezhurnyj-po-biznesu.ru.
+        </p> -->
+      </div>
+      <div class="social">
+        <span class="social__description">
+          Наши социальные платформы
+
+        </span>
+        <img src="img/konstalking.png" width="150" height="100" class="social__side">
+        <ul class="social__list">
+
+          <li class="social__item">
+            <a class="social__icon-wrapper" href="#">
+              <img class="social__icon" src="img/telegram.svg" width="40" height="40">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__icon-wrapper social__icon-wrapper--zen" href="#">
+              <img class="social__icon" src="img/zen.svg" width="40" height="40">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__icon-wrapper" href="#">
+              <img class="social__icon" src="img/youtube.svg" width="40" height="40">
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </footer>
+    <div class="main-footer__background">
+      <p class="main-footer__background-title">
+        © Дежурный по бизнесу, 2022 год
+      </p>
+    </div>
     <script src="js/index.js" type="module"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
